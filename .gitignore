@@ -1,0 +1,5 @@
+ConsoleAp3/bin/Debug/net6.0/**
+!ConsoleAp3/bin/Debug/net6.0/dictionary.txt
+ConsoleAp3/obj/*
+.idea/*
+ 
