@@ -15,7 +15,9 @@ public class StringsDictionary
 
     public void Remove(string key)
     {
-        
+       var index = CalculateHash(key);
+        if (_buckets[index] == null) return;
+        _buckets[index].RemoveByKey(key); 
     }
 
     public KeyValuePair Get(string key)
