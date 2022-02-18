@@ -10,7 +10,7 @@ public class StringsDictionary
     {
        var index = CalculateHash(key);
        if (_buckets[index] == null) _buckets[index] = new LinkedList();
-       _buckets[index].Add(new KeyValuePair(key, value));xx
+       _buckets[index].Add(new KeyValuePair(key, value));
     }
 
     public void Remove(string key)
