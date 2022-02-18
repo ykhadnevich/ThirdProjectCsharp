@@ -22,7 +22,9 @@ public class StringsDictionary
 
     public KeyValuePair Get(string key)
     {
-        
+        var index = CalculateHash(key);
+        if (_buckets[index] == null) return null;
+        return _buckets[index].GetItemWithKey(key);
     }
 
     private int CalculateHash(string key)
